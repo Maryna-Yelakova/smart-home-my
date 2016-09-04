@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SmartHome</title>
+    <link rel="shortcut icon" href="../img/icon.ico" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/friedge.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container aligner">
+            <div class="dp-ib">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="" class="logo small">
+                    <h1 class="name">SmartHome<sup class="">light</sup></h1>
+                </a>
+            </div>
+            <h2 class="promo">Make your home smarter!</h2>
+        </div>
+    </header>
+    <div class="bg-global blured"></div>
+    <main class="main aligner">
+        <div class="container aligner center">
+            <div class="width-25 dp-ib text-center">
+                <form action="" class="form">
+                    <div class="input-field">
+                        <span>Add new product</span>
+                        <input id="newProd" type="text" class="input new-product">
+                        <div id="productError" class="input-error">Enter text!</div>
+                    </div>
+                    <button id="btnAddProduct" class="submit">Add Products</button>
+                    <button id="btnRemoveProduct" class="submit remove">Remove Products</button>
+                    <div id="prodList" class="products">
+                    </div>
+                </form>
+            </div>
+            <div class="width-50 dp-ib text-center">
+                <div class="container">
+                    <label class="btn-power">
+                        <input id="btnPower" type="checkbox" name="status">
+                        <?xml version="1.0" standalone="no"?>
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.000000 300.000000" preserveAspectRatio="xMidYMid meet" class="btn-power-bg">
+                            <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)">
+                                <path d="M1519 2578 c-19 -37 -178 -340 -481 -915 l-69 -133 191 0 c105 0 190
+                  -4 188 -8 -3 -8 -375 -729 -511 -992 -66 -128 -68 -133 -34 -100 63 63 1297
+                  1413 1297 1420 0 4 -100 6 -223 5 -123 -1 -231 1 -240 4 -14 5 29 75 216 356
+                  129 193 242 362 251 378 l18 27 -291 0 -291 0 -21 -42z" />
+                                <path d="M1340 2518 c-138 -19 -321 -96 -439 -183 -290 -214 -446 -539 -428
+                  -889 13 -253 107 -470 281 -653 48 -51 91 -93 95 -93 4 0 23 33 43 74 l37 73
+                  -46 44 c-100 98 -185 247 -225 397 -27 104 -29 286 -4 395 73 320 324 580 634
+                  657 40 10 44 15 87 100 25 50 42 89 38 89 -5 -1 -37 -6 -73 -11z" />
+                                <path d="M2002 2323 c-21 -32 -41 -63 -45 -69 -4 -7 15 -26 46 -46 74 -49 171
+                  -150 228 -238 166 -253 185 -589 47 -865 -123 -246 -365 -421 -643 -466 -111
+                  -17 -269 -7 -375 26 -128 39 -119 41 -179 -26 l-54 -59 54 -24 c86 -40 224
+                  -75 323 -84 311 -28 609 79 827 297 351 351 403 892 125 1310 -55 82 -171 201
+                  -254 259 l-61 43 -39 -58z" />
+                            </g>
+                        </svg>
+                    </label>
+                    <div class="relative">
+                        <?xml version="1.0" standalone="no"?>
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900.000000 900.000000" preserveAspectRatio="xMidYMid meet" class="svg-elem">
+                            <g transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)">
+                                <path d="M2650 8306 c-58 -7 -115 -18 -127 -24 -12 -7 -31 -12 -42 -12 -12 0
+                        -29 -4 -39 -9 -9 -5 -53 -26 -97 -47 -84 -40 -200 -119 -264 -182 -93 -91
+                        -192 -248 -244 -387 -48 -129 -47 -91 -47 -1553 0 -1087 3 -1371 13 -1374 6
+                        -2 1217 -4 2690 -3 2367 0 2679 2 2687 15 6 9 9 510 7 1355 -3 1433 -1 1387
+                        -51 1546 -74 240 -280 473 -517 588 -109 52 -165 68 -309 86 -97 12 -384 15
+                        -1835 14 -1264 -1 -1748 -5 -1825 -13z m155 -2039 c21 -12 53 -42 70 -65 l30
+                        -44 0 -316 c0 -297 -1 -319 -19 -347 -47 -72 -110 -105 -201 -105 -98 0 -183
+                        53 -212 132 -18 51 -17 595 1 639 39 93 96 128 211 128 65 1 88 -4 120 -22z" />
+                                <path d="M1797 4263 c-4 -3 -7 -625 -7 -1382 0 -1320 1 -1379 19 -1447 30
+                        -111 46 -154 91 -238 93 -177 249 -331 425 -418 102 -51 143 -68 164 -68 10 0
+                        36 -8 57 -17 37 -17 151 -18 1869 -21 1792 -2 1921 -1 2035 29 206 53 405 190
+                        533 364 103 140 138 218 188 420 17 67 25 2735 9 2765 -11 20 -27 20 -2694 20
+                        -1475 0 -2686 -3 -2689 -7z m1003 -696 c26 -13 56 -40 75 -65 l30 -44 0 -306
+                        c0 -169 -3 -318 -7 -332 -11 -38 -67 -94 -115 -114 -31 -14 -60 -17 -115 -15
+                        -64 4 -79 8 -120 38 -81 58 -83 64 -86 400 -3 313 -2 325 46 389 37 48 93 71
+                        177 71 51 0 82 -6 115 -22z" />
+                            </g>
+                        </svg>
+                        <div id="svgColor">
+                            <!-- new svg -->
+                            <?xml version="1.0" standalone="no"?>
+                            <svg id="svg" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900.000000 900.000000" preserveAspectRatio="xMidYMid meet" class="svg-elem big off">
+                                <g transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)">
+                                    <path d="M2650 8306 c-58 -7 -115 -18 -127 -24 -12 -7 -31 -12 -42 -12 -12 0
+                        -29 -4 -39 -9 -9 -5 -53 -26 -97 -47 -84 -40 -200 -119 -264 -182 -93 -91
+                        -192 -248 -244 -387 -48 -129 -47 -91 -47 -1553 0 -1087 3 -1371 13 -1374 6
+                        -2 1217 -4 2690 -3 2367 0 2679 2 2687 15 6 9 9 510 7 1355 -3 1433 -1 1387
+                        -51 1546 -74 240 -280 473 -517 588 -109 52 -165 68 -309 86 -97 12 -384 15
+                        -1835 14 -1264 -1 -1748 -5 -1825 -13z m155 -2039 c21 -12 53 -42 70 -65 l30
+                        -44 0 -316 c0 -297 -1 -319 -19 -347 -47 -72 -110 -105 -201 -105 -98 0 -183
+                        53 -212 132 -18 51 -17 595 1 639 39 93 96 128 211 128 65 1 88 -4 120 -22z" />
+                                    <path d="M1797 4263 c-4 -3 -7 -625 -7 -1382 0 -1320 1 -1379 19 -1447 30
+                        -111 46 -154 91 -238 93 -177 249 -331 425 -418 102 -51 143 -68 164 -68 10 0
+                        36 -8 57 -17 37 -17 151 -18 1869 -21 1792 -2 1921 -1 2035 29 206 53 405 190
+                        533 364 103 140 138 218 188 420 17 67 25 2735 9 2765 -11 20 -27 20 -2694 20
+                        -1475 0 -2686 -3 -2689 -7z m1003 -696 c26 -13 56 -40 75 -65 l30 -44 0 -306
+                        c0 -169 -3 -318 -7 -332 -11 -38 -67 -94 -115 -114 -31 -14 -60 -17 -115 -15
+                        -64 4 -79 8 -120 38 -81 58 -83 64 -86 400 -3 313 -2 325 46 389 37 48 93 71
+                        177 71 51 0 82 -6 115 -22z" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <p>Battery</p>
+                <div class="battery">
+                    <div class="outer-progress-bar">
+                        <div id="batteryPerc" class="percentage">0%</div>
+                        <div id="progressBar" class="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="width-25 dp-ib text-center">
+                <form action="" class="form">
+                    <div id="inputWrapper">
+                        <div class="input-field">
+                            <span>General</span>
+                            <input id="degGeneral" type="number" class="input degree" min="3" max="9" value="5" disabled="disabled">
+                            <span>&deg;C</span>
+                            <div class="input-error">Enter value between "3" and "9"</div>
+                        </div>
+                        <div class="input-field">
+                            <span>Freezer</span>
+                            <input id="degFreeze" type="number" class="input degree" min="-65" max="-10" value="-18" disabled="disabled">
+                            <span>&deg;C</span>
+                            <div class="input-error">Enter value between "-65" and "-10"</div>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <select name="selectMode" id="selectMode" class="select">
+                            <option value="standard"><span>Standard</span></option>
+                            <option value="light"><span>Light</span></option>
+                            <option value="highFreeze"><span>High freeze</span></option>
+                            <option value="custom"><span>Custom</span></option>
+                        </select>
+                    </div>
+                    <button id="btnFrost" class="submit">Extreme Freeze</button>
+                    <div id="errFrost" class="input-error">No products to freeze!</div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container copyright"> &copy; Kharkiv SoftServe ITA 2016</div>
+    </footer>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-body">
+            <div class="modal-header">
+                <button id="close" class="close">x</button>
+            </div>
+            <div class="modal-message">
+                <p id="modalMessage" class="output-modal-message"></p>
+                <div class="loader">
+                    <img id="gif" src="../img/loader.gif" alt="" />
+                    <span id="gifPerc" class="loader-percentage">
+
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/friedge.js"></script>
+</body>
+
+</html>

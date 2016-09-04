@@ -1,28 +1,22 @@
 {
-  "name": "smart-home-lite",
+  "name": "smart-home-my",
   "version": "1.0.0",
-  "description": "First demo project of Web UI group ITAcademy Soft Serve.Smart functionality of following devices: - air conditioner;- friedge;- multi cooker;- security;- washing machine;- coffee machin",
-  "main": "index.js",
+  "description": "smart home heroku deploy",
+  "main": "server.js",
   "scripts": {
-    "start": "http-server ./ -a localhost -p 8000 -c-1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kharkiv-SoftServe-ITA/SmartHome-Lite.git"
+    "url": "git+https://github.com/Maryna-Yelakova/smart-home-my.git"
   },
-  "author": "Web UI",
+  "author": "Maryna Yelakova",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Kharkiv-SoftServe-ITA/SmartHome-Lite/issues"
+    "url": "https://github.com/Maryna-Yelakova/smart-home-my/issues"
   },
-  "homepage": "https://github.com/Kharkiv-SoftServe-ITA/SmartHome-Lite/index.html",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-concat-css": "^2.3.0",
-    "gulp-jsmin": "^0.1.5",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglyfly": "^1.4.2",
-    "gulp-watch": "^4.3.9",
-    "http-server": "^0.9.0"
+  "homepage": "https://github.com/Maryna-Yelakova/smart-home-my#readme",
+  "dependencies": {
+    "express": "^4.14.0"
   }
 }

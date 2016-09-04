@@ -1,0 +1,92 @@
+<head>
+    <title>SmartHome</title>
+    <link rel="shortcut icon" href="../img/icon.ico" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/washing-machine-style.css">
+	 <script type="text/javascript" src="../scripts/washing-machine-model.js"></script>
+	 <script type="text/javascript" src="../scripts/washing-machine-main.js"></script>
+	<script type="text/javascript" src="../scripts/washing-machine-controller.js"></script>
+    <script type="text/javascript" src="../scripts/washing-machine-view.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container aligner">
+            <div class="dp-ib">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="" class="logo small">
+                    <h1 class="name">SmartHome<sup class="">light</sup></h1>
+                </a>
+            </div>
+            <h2 class="promo">Make your home smarter!</h2>
+        </div>
+    </header>
+    <div class="bg-global blured"></div>
+    <main class="main aligner">
+        <div class="container aligner center">
+            <div class="layout-50-50">
+                <diV class="col1">
+                    <object type="image/svg+xml" data="../img/washer-machine.svg" id="washingMachine">Your browser does not support SVGs</object>
+                </diV>
+                <div class="col2">
+                    <h3>Options:</h3>
+                    <div class="wrapper">
+                        <form name="washingOptions">
+                            <div class="panel" id="panel">
+                                <div class="panel-option control">
+                                    <h3>Turn Off/On</h3>
+                                    <label class="switch panel-value">
+                                        <input type="checkbox" name="status" />
+                                        <div class="slider round"></div>
+                                    </label>
+                                </div>
+                                <div class="panel-option">
+                                    <h3>Fill washing powder</h3>
+                                    <label class="switch panel-value">
+                                        <input type="checkbox" name="switch" disabled />
+                                        <div class="slider round"></div>
+                                    </label>
+                                </div>
+                                <div class="panel-option ">
+                                    <h3>Select program</h3>
+                                    <fieldset class="panel-value">
+                                        <input type="radio" name="program" id="Sport" checked="" disabled /> <span class="time">00:40  40C</span>
+                                        <label for="Sport">Sport</label>
+                                        <input type="radio" name="program" id="Cotton" disabled /> <span class="time">02:55  90C</span>
+                                        <label for="Cotton">Cotton</label>
+                                        <input type="radio" name="program" id="Jeans" disabled /> <span class="time">02:20  60C</span>
+                                        <label for="Jeans">Jeans</label>
+                                    </fieldset>
+                                </div>    
+                                <div class="actions-wrapper">
+                                    <input class="button" type="submit" name="submit" value="Start" disabled />
+                                </div>                           
+                            </div>
+                            <div class="hide" id="panel-in-process">
+                                <h3>Program Sport is running</h3>
+                                <div class="timer" id="timer">
+                                    <div class="timer-output">
+                                        <span id="hours"></span>:<span id="minutes"></span>:<span id="seconds">59</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions-wrapper">
+                                    <input class="button" type="button" name="pause" value="Pause"  />
+									<input class="button green" type="button" name="restore" value="Restore" disabled />
+                                    <input class="button green hide" type="button" name="startNew" value="Start new washing" />
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="container copyright"> &copy; Kharkiv SoftServe ITA 2016</div>
+    </footer>
+</body>
+
+</html>

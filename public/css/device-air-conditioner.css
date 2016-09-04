@@ -1,0 +1,70 @@
+.st0{fill:none;stroke:#BBCCDD;stroke-width:3;stroke-miterlimit:10;}
+.st1{fill:none;stroke:#BBCCDD;stroke-width:4;stroke-miterlimit:10;}
+.st2{fill:#BBCCDD;}
+.st3{font-family:'MyriadPro-Regular';}
+.st4{font-size:36px;}
+.screen-st0{fill:none;}
+.screen-st1{fill:#BBCCDD;}
+
+body {
+    font-size: 1vw;
+    color: #bbccdd;
+}
+
+.body {
+    position: relative;
+}
+.picture {
+    text-align: center;
+}
+
+.picture > object {
+    width: 50vw;
+}
+
+.controls {
+    position: absolute;
+    top: 8vw;
+    left: 53vw;
+    width: 17vw;
+}
+
+.controls label{
+    margin: 0 1vw;
+}
+
+.switch, .temperature, .speed, .humidity {
+    margin: 0.5vw 0;
+    text-align: center;
+}
+
+#blade {
+    transform-origin: center;
+}
+
+#screen {
+    text-align: center;
+}
+
+.controls > div {
+    margin: 5vw 0;
+    padding: 0.175vw;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #BBCCDD;
+    border-radius: 20px;
+}
+
+#temperature-input, #speed-input, #humidity-input{
+	float: right;
+	margin-right: 50px;
+	width: 50px;
+	font-size: 18px;
+	border:none;
+	border-radius: 3px;
+	padding: 0 5px;
+}
+
+label{
+	font-size: 24px;
+}
